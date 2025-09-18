@@ -17,7 +17,7 @@ import { toast } from "sonner";
 import { 
   Users, 
   MapPin, 
-  Cow, 
+  Beef, 
   AlertTriangle, 
   Plus, 
   Edit, 
