@@ -332,7 +332,7 @@ const Dashboard = () => {
           <CardContent className="p-6">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <Cow className="h-8 w-8 text-emerald-600" />
+                <Beef className="h-8 w-8 text-emerald-600" />
               </div>
               <div className="ml-5 w-0 flex-1">
                 <dl>
