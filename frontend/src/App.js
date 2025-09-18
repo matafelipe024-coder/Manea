@@ -223,7 +223,7 @@ const Layout = ({ children }) => {
   const menuItems = [
     { path: '/dashboard', icon: Home, label: 'Dashboard' },
     { path: '/fincas', icon: Building, label: 'Fincas' },
-    { path: '/bovinos', icon: Cow, label: 'Bovinos' },
+    { path: '/bovinos', icon: Beef, label: 'Bovinos' },
     { path: '/registros-medicos', icon: Stethoscope, label: 'Registros Médicos' },
     { path: '/alertas', icon: AlertTriangle, label: 'Alertas' },
     { path: '/usuarios', icon: Users, label: 'Usuarios' },
