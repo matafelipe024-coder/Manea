@@ -948,16 +948,47 @@ const Bovinos = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // Validar campos requeridos
+      if (!formData.finca_id) {
+        toast.error('Debe seleccionar una finca');
+        return;
+      }
+      if (!formData.caravana) {
+        toast.error('La caravana es obligatoria');
+        return;
+      }
+
       const dataToSend = { ...formData };
-      if (dataToSend.peso_kg) dataToSend.peso_kg = parseFloat(dataToSend.peso_kg);
-      if (dataToSend.precio) dataToSend.precio = parseFloat(dataToSend.precio);
+      
+      // Convertir números si están presentes
+      if (dataToSend.peso_kg && dataToSend.peso_kg !== '') {
+        dataToSend.peso_kg = parseFloat(dataToSend.peso_kg);
+      } else {
+        delete dataToSend.peso_kg;
+      }
+      
+      if (dataToSend.precio && dataToSend.precio !== '') {
+        dataToSend.precio = parseFloat(dataToSend.precio);
+      } else {
+        delete dataToSend.precio;
+      }
+
+      // Limpiar campos vacíos
+      Object.keys(dataToSend).forEach(key => {
+        if (dataToSend[key] === '' || dataToSend[key] === null) {
+          delete dataToSend[key];
+        }
+      });
+
+      console.log('Enviando datos:', dataToSend);
 
       if (editingBovino) {
         await axios.put(`${API}/bovinos/${editingBovino.id}`, dataToSend);
         toast.success('Bovino actualizado exitosamente');
       } else {
-        await axios.post(`${API}/bovinos`, dataToSend);
+        const response = await axios.post(`${API}/bovinos`, dataToSend);
         toast.success('Bovino registrado exitosamente con código QR');
+        console.log('Bovino creado:', response.data);
       }
       
       setDialogOpen(false);
@@ -965,6 +996,8 @@ const Bovinos = () => {
       resetForm();
       fetchBovinos();
     } catch (error) {
+      console.error('Error completo:', error);
+      console.error('Response error:', error.response?.data);
       toast.error(error.response?.data?.detail || 'Error al guardar bovino');
     }
   };
