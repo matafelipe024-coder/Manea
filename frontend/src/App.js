@@ -1160,8 +1160,14 @@ const Bovinos = () => {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <Label htmlFor="finca_id">Finca *</Label>
-                <Select value={formData.finca_id} onValueChange={(value) => setFormData({...formData, finca_id: value})}>
-                  <SelectTrigger><SelectValue placeholder="Seleccionar finca" /></SelectTrigger>
+                <Select 
+                  value={formData.finca_id} 
+                  onValueChange={(value) => setFormData({...formData, finca_id: value})}
+                  required
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Seleccionar finca" />
+                  </SelectTrigger>
                   <SelectContent>
                     {fincas.map((finca) => (
                       <SelectItem key={finca.id} value={finca.id}>{finca.nombre}</SelectItem>
@@ -1171,18 +1177,29 @@ const Bovinos = () => {
               </div>
               <div>
                 <Label htmlFor="caravana">Caravana *</Label>
-                <Input id="caravana" value={formData.caravana} 
-                  onChange={(e) => setFormData({...formData, caravana: e.target.value})} required />
+                <Input 
+                  id="caravana" 
+                  value={formData.caravana} 
+                  onChange={(e) => setFormData({...formData, caravana: e.target.value})} 
+                  required 
+                  placeholder="Ej: 001"
+                />
               </div>
               <div>
                 <Label htmlFor="nombre">Nombre</Label>
-                <Input id="nombre" value={formData.nombre}
-                  onChange={(e) => setFormData({...formData, nombre: e.target.value})} />
+                <Input 
+                  id="nombre" 
+                  value={formData.nombre}
+                  onChange={(e) => setFormData({...formData, nombre: e.target.value})} 
+                  placeholder="Ej: Esperanza"
+                />
               </div>
               <div>
                 <Label htmlFor="sexo">Sexo</Label>
                 <Select value={formData.sexo} onValueChange={(value) => setFormData({...formData, sexo: value})}>
-                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="H">Hembra</SelectItem>
                     <SelectItem value="M">Macho</SelectItem>
@@ -1190,9 +1207,40 @@ const Bovinos = () => {
                 </Select>
               </div>
               <div>
-                <Label htmlFor="tipo_ganado">Tipo de Ganado</Label>
+                <Label htmlFor="raza">Raza</Label>
+                <Input 
+                  id="raza" 
+                  value={formData.raza || ''} 
+                  onChange={(e) => setFormData({...formData, raza: e.target.value})} 
+                  placeholder="Ej: Holstein"
+                />
+              </div>
+              <div>
+                <Label htmlFor="fecha_nacimiento">Fecha de Nacimiento</Label>
+                <Input 
+                  id="fecha_nacimiento" 
+                  type="date" 
+                  value={formData.fecha_nacimiento || ''}
+                  onChange={(e) => setFormData({...formData, fecha_nacimiento: e.target.value})} 
+                />
+              </div>
+              <div>
+                <Label htmlFor="peso_kg">Peso (kg)</Label>
+                <Input 
+                  id="peso_kg" 
+                  type="number" 
+                  step="0.1" 
+                  value={formData.peso_kg || ''}
+                  onChange={(e) => setFormData({...formData, peso_kg: e.target.value})} 
+                  placeholder="Ej: 450.5"
+                />
+              </div>
+              <div>
+                <Label htmlFor="tipo_ganado">Tipo de Ganado *</Label>
                 <Select value={formData.tipo_ganado} onValueChange={(value) => setFormData({...formData, tipo_ganado: value})}>
-                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="leche">🥛 Leche</SelectItem>
                     <SelectItem value="carne">🍖 Carne</SelectItem>
@@ -1203,7 +1251,9 @@ const Bovinos = () => {
               <div>
                 <Label htmlFor="estado_venta">Estado de Venta</Label>
                 <Select value={formData.estado_venta} onValueChange={(value) => setFormData({...formData, estado_venta: value})}>
-                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="disponible">Disponible</SelectItem>
                     <SelectItem value="reservado">Reservado</SelectItem>
@@ -1213,13 +1263,33 @@ const Bovinos = () => {
               </div>
               <div>
                 <Label htmlFor="precio">Precio (₡)</Label>
-                <Input id="precio" type="number" step="0.01" value={formData.precio}
-                  onChange={(e) => setFormData({...formData, precio: e.target.value})} />
+                <Input 
+                  id="precio" 
+                  type="number" 
+                  step="0.01" 
+                  value={formData.precio || ''}
+                  onChange={(e) => setFormData({...formData, precio: e.target.value})} 
+                  placeholder="Ej: 800000"
+                />
               </div>
               <div>
-                <Label htmlFor="contacto_nombre">Contacto</Label>
-                <Input id="contacto_nombre" value={formData.contacto_nombre}
-                  onChange={(e) => setFormData({...formData, contacto_nombre: e.target.value})} />
+                <Label htmlFor="contacto_nombre">Contacto - Nombre</Label>
+                <Input 
+                  id="contacto_nombre" 
+                  value={formData.contacto_nombre || ''}
+                  onChange={(e) => setFormData({...formData, contacto_nombre: e.target.value})} 
+                  placeholder="Ej: María González"
+                />
+              </div>
+              <div>
+                <Label htmlFor="contacto_telefono">Contacto - Teléfono</Label>
+                <Input 
+                  id="contacto_telefono" 
+                  type="tel" 
+                  value={formData.contacto_telefono || ''}
+                  onChange={(e) => setFormData({...formData, contacto_telefono: e.target.value})} 
+                  placeholder="Ej: +506 8888-1111"
+                />
               </div>
             </div>
             <div>
