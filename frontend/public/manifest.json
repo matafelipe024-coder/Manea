@@ -1,0 +1,92 @@
+{
+  "short_name": "MANEA Pro",
+  "name": "MANEA Professional - Sistema Integral de Gestión Ganadera",
+  "description": "Aplicación profesional para gestión integral de ganado con QR, geolocalización y analytics",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "64x64 32x32 24x24 16x16"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHJ4PSI0OCIgZmlsbD0idXJsKCNncmFkaWVudDApIi8+PHBhdGggZD0iTTk2IDQ4QzEyMC44IDQ4IDE0NCA2OC44IDE0NCA5NkMxNDQgMTIzLjIgMTIwLjggMTQ0IDk2IDE0NEM3MS4yIDE0NCA0OCAxMjMuMiA0OCA5NkM0OCA2OC44IDcxLjIgNDggOTYgNDhaIiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik04NCA3MkM4NCA2OS44IDg1LjggNjggODggNjhIMTA0Qzk4LjQgNjggOTQgNzIuNCA5NCA3OFY5OEw4NCA5NlY3MloiIGZpbGw9IiMxMEI5ODEiLz48cGF0aCBkPSJNMTA4IDEwNEM5OC40IDEwNCA5MCA5NS42IDkwIDg2Qzk0IDkwIDk4IDk0IDEwNCA5NEMxMTAgOTQgMTE0IDk4IDExNCAxMDRIMTA4WiIgZmlsbD0iIzEwQjk4MSIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQwIiB4MT0iMCIgeTE9IjAiIHgyPSIxOTIiIHkyPSIxOTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjMTA1OTNFIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMEY3NzJBIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PC9zdmc+",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMjgiIGZpbGw9InVybCgjZ3JhZGllbnQwKSIvPjxwYXRoIGQ9Ik0yNTYgMTI4QzMyMiAxMjggMzg0IDE4NCAzODQgMjU2QzM4NCAzMjggMzIyIDM4NCAyNTYgMzg0QzE5MCAzODQgMTI4IDMyOCAxMjggMjU2QzEyOCAxODQgMTkwIDEyOCAyNTYgMTI4WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMjI0IDE5MkMyMjQgMTg2IDIyOCAxODIgMjM0IDE4MkgyNzhDMjY0IDE4MiAyNTIgMTk0IDI1MiAyMDhWMjYyTDIyNCAyNTZWMTkyWiIgZmlsbD0iIzEwQjk4MSIvPjxwYXRoIGQ9Ik0yODggMjc4QzI2NCAyNzggMjQwIDI1NCAyNDAgMjMwQzI1MiAyNDIgMjY0IDI1NCAyNzggMjU0QzI5MiAyNTQgMzA0IDI2NiAzMDQgMjc4SDI4OFoiIGZpbGw9IiMxMEI5ODEiLz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MCIgeDE9IjAiIHkxPSIwIiB4Mj0iNTEyIiB5Mj0iNTEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzEwNTkzRSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBGNzcyQSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjwvc3ZnPg==",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#10B981",
+  "background_color": "#FFFFFF",
+  "categories": ["business", "productivity", "agriculture"],
+  "lang": "es",
+  "screenshots": [
+    {
+      "src": "/images/screenshot-mobile.png",
+      "type": "image/png",
+      "sizes": "375x812",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshot-desktop.png", 
+      "type": "image/png",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nuevo Bovino",
+      "short_name": "Agregar",
+      "description": "Registrar nuevo bovino",
+      "url": "/bovinos?action=new",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHJ4PSIyNCIgZmlsbD0iIzEwQjk4MSIvPjxwYXRoIGQ9Ik00OCAyNFY3MiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNMjQgNDhINzIiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Escanear QR",
+      "short_name": "QR",
+      "description": "Escanear código QR",
+      "url": "/bovinos?action=scan",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHJ4PSIyNCIgZmlsbD0iIzM5MDBEQyIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSI2MCIgeT0iMTYiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcng9IjQiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iMTYiIHk9IjYwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSI0IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjQ0IiB5PSI0NCIgd2lkdGg9IjgiIGhlaWdodD0iOCIgZmlsbD0id2hpdGUiLz48L3N2Zz4=",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Dashboard",
+      "short_name": "Panel",
+      "description": "Ver dashboard principal",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHJ4PSIyNCIgZmlsbD0iIzM5OTFFMSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iNCIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSI1NiIgeT0iMTYiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcng9IjQiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iMTYiIHk9IjU2IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjU2IiB5PSI1NiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iNCIgZmlsbD0id2hpdGUiLz48L3N2Zz4=",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "fast",
+    "high-quality",
+    "offline"
+  ],
+  "edge_side_panel": {
+    "preferred_width": 480
+  },
+  "prefer_related_applications": false
+}
