@@ -25,8 +25,11 @@ import {
   BarChart3, PieChart, Map, Bell, Settings, UserCheck, Milk, Weight, Syringe, Heart, ClipboardList,
   Target, Zap, CheckCircle, Phone, Mail, MapIcon, Thermometer, Droplets, Scale, Clock, Star,
   TrendingDown, AlertCircle, Info, Check, X, Upload, Camera, Share2, ExternalLink, RefreshCw, 
-  Shield, Award, Crown, Sparkles, Layers
+  Shield, Award, Crown, Sparkles, Layers, Smartphone, Wifi, WifiOff, CloudOff, Satellite
 } from "lucide-react";
+import CameraCapture from './components/CameraCapture';
+import QRScanner from './components/QRScanner';
+import AdvancedAnalytics from './components/AdvancedAnalytics';
 import 'leaflet/dist/leaflet.css';
 import "./App.css";
 
